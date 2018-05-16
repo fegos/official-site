@@ -1,0 +1,56 @@
+// 适用于PC站点，页面定宽
+.g-ctn {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+// 移动端满屏
+@media screen and (max-width: 1190px) {
+    .g-ctn {
+        width: 100%;
+    }
+}
+#header {
+	padding-top: 10px;
+	height: 60px;
+  background: #FFF;
+  hr{
+    border: 0;
+    width: 100%;
+    height: 1px;
+    background-image: linear-gradient(to right, #ffffff,#dddddd,#ffffff);
+  }
+	.logo{
+    margin-top: -5px;
+		a{
+      color: #FD9843;
+      display: inline-block;
+		}
+	}
+	nav{
+		font-size: 14px;
+		line-height: 57px;
+		a{
+			display: inline-block;
+			color: #939393;
+			width: 96px;
+			text-align: center;
+		}
+		.active{
+			color: #FD9843;
+			border-bottom: 4px solid #FD9843;
+		}
+	}
+}
+
+#footer {
+	height: 60px;
+	line-height: 60px;
+	width: 100%;
+	background: #4A4A4A;
+	color: #939393;
+	p{
+		text-align: center;
+		font-size: 16px;
+	}
+}

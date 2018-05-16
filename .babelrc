@@ -1,0 +1,30 @@
+{
+	"env": {
+		"desktop": {
+			"presets": [
+				["env", {
+					"targets": {
+						"browsers": ["ie >= 9", "safari >= 9", "firefox >= 40", "chrome >= 40"]
+					},
+					"modules": false,
+					"useBuiltIns": "entry"
+				}],
+				"react",
+				"stage-0"
+			]
+		},
+		"mobile": {
+			"presets": [
+				["env", {
+					"targets": {
+						"browsers": [ "safari >= 9", "firefox >= 40", "chrome >= 40"]
+					},
+					"modules": false,
+					"useBuiltIns": "entry"
+				}],
+				"react",
+				"stage-0"
+			]
+		}
+	}
+}

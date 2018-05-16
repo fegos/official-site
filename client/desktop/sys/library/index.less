@@ -1,0 +1,33 @@
+.page{
+	font-size: 16px;
+  min-height: 600px;
+}
+
+.list {
+  display: flex;
+  margin-top: 30px;
+}
+
+.link {
+  display: inline-block;
+  text-align: center;
+  width: 180px;
+  margin-right: 50px;
+  padding: 10px;
+  border: 1px solid #eee;
+  .title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px auto;
+  }
+  &:hover {
+    box-shadow: 0 0 2px 1px #eee;
+  }
+}
+
+@media screen and (max-width: 1190px) {
+  .page {
+    min-height: 1320px;
+    box-sizing: border-box;
+  }
+}

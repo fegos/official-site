@@ -1,0 +1,9 @@
+{
+  "name": "markdown-sites",
+  "version": "1.0.0",
+  "dependencies": {
+  },
+  "scripts": {
+    "init": "npm install --no-optional --no-package-lock --registry=https://registry.npm.taobao.org",
+  }
+}
