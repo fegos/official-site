@@ -7,7 +7,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const ROOT_PATH = path.resolve(__dirname, '..')
 const SRC_PATH = path.resolve(ROOT_PATH, 'client/desktop')
 const BUILD_PATH = path.resolve(ROOT_PATH, 'build')
-const BabelTransformImport = path.resolve(SRC_PATH, 'node_modules/nsip/lib/plugin/babel-transform-imports')
+const BabelTransformImport = path.resolve(SRC_PATH, 'node_modules/fego/lib/plugin/babel-transform-imports')
 let desktopConfig, serverConfig, cdnPath = '/cdn/'
 
 desktopConfig = {

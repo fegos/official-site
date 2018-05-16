@@ -8,7 +8,7 @@ import URL from 'URL';
 import Frame from 'src/frame';
 import Routes from 'src/sys/route';
 
-import { Fetch } from 'nsip';
+import { Fetch } from 'fego';
 import Interceptor from 'Interceptor';
 
 function matchRoute(pathname) {

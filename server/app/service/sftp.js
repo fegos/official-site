@@ -14,7 +14,7 @@ class SftpService extends Service {
 		try {
 			let status = await sftp.getConnectionStatus()
 			if (status !== 'connected') {
-				await sftp.connect(config.nsip.sftp || {})
+				await sftp.connect(config.fego.sftp || {})
 			}
 
 			tokens = targetName.split(/\//g)

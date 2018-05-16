@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Fetch } from 'nsip';
+import { Fetch } from 'fego';
 import { Link } from 'react-router-dom';
 import style from './index.less';
 

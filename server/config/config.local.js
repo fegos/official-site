@@ -19,7 +19,7 @@ module.exports = (appInfo) => {
       file: path.join(appInfo.baseDir, '../logs/access.log'),
     },
   };
-  config.nsip = {
+  config.fego = {
     redis: {
       host: '127.0.0.1',
       port: '6379',

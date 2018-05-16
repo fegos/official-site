@@ -7,7 +7,7 @@ module.exports = (appInfo) => {
   config.logger = {
     level: 'INFO',
   };
-  config.nsip = {
+  config.fego = {
     debug: false,
     redis: {
       host: '10.200.242.33',

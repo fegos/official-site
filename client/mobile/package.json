@@ -8,7 +8,7 @@
   "main": "index.js",
   "dependencies": {
     "moment": "^2.19.3",
-    "nsip": "git+https://git.ms.netease.com/nsip-core/nsip.git#v0.1.7",
+    "fego": "git+https://github.com/fegos/fego.git#release",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-router": "^4.1.1",

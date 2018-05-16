@@ -3,7 +3,7 @@
  */
 module.exports = (appInfo) => {
   const config = exports = {};
-  config.nsip = {
+  config.fego = {
     redis: {
       host: '10.200.242.33',
       port: '6382',

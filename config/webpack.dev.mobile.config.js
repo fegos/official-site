@@ -4,7 +4,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ROOT_PATH = path.resolve(__dirname, '..')
 const SRC_PATH = path.resolve(ROOT_PATH, 'client/mobile')
-const BabelTransformImport = `${SRC_PATH}/node_modules/nsip/lib/plugin/babel-transform-imports`
+const BabelTransformImport = `${SRC_PATH}/node_modules/fego/lib/plugin/babel-transform-imports`
 let cdnPath = '/'
 
 module.exports = {

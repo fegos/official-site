@@ -59,7 +59,7 @@ module.exports = (appInfo) => {
   };
 
   // add your config here
-  config.nsip = {
+  config.fego = {
     debug: true,
     cacheTime: 10,
     ipLimit: {
