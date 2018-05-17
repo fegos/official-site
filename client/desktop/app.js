@@ -16,24 +16,25 @@ const PAGE_MAP = {
   '/library': '组件库',
   '/wiki': '知识库',
   '/labs': '实验室',
-}
+};
 function getPageName(pathname) {
-  let name = PAGE_MAP[pathname]
+  let name = PAGE_MAP[pathname];
   if (!name) {
-    let res = pathname.match(/\/wiki\/article\/(\w+)/)
-    name = res ? `文章: ${res[1]}` : pathname
+    const res = pathname.match(/\/wiki\/article\/(\w+)/);
+    name = res ? `文章: ${res[1]}` : pathname;
   }
-  return name
+  return name;
 }
 
 class App extends Component {
   componentDidMount() {
-    ga('set', {
-      'page': location.pathname,
-      'dimension2': getPageName(location.pathname)
-    })
-    ga('send', 'pageview')
-    console.log(getPageName(location.pathname))
+    const { location } = window;
+    window.ga('set', {
+      page: location.pathname,
+      dimension2: getPageName(location.pathname),
+    });
+    window.ga('send', 'pageview');
+    console.log(getPageName(location.pathname));
   }
   render() {
     return (
@@ -45,14 +46,14 @@ class App extends Component {
     );
   }
   onChange = (history) => {
-    let { location={}, action } = history;
+    const { location = {}, action } = history;
     if (action === 'PUSH') {
-      ga('set', {
-        'page': location.pathname,
-        'dimension2': getPageName(location.pathname)
-      })
-      ga('send', 'pageview')
-      console.log(getPageName(location.pathname))
+      window.ga('set', {
+        page: location.pathname,
+        dimension2: getPageName(location.pathname),
+      });
+      window.ga('send', 'pageview');
+      console.log(getPageName(location.pathname));
     }
   }
 }

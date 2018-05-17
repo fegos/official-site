@@ -20,10 +20,11 @@ class MainSection extends Component {
             </svg>
             <h2>主动</h2>
             <p>
-              主动发现问题<br />
-              主动思考更优方案<br />
-              主动跟进并解决问题<br />
-              主动总结反思(总结经验并分享)<br />
+              主动发现问题
+              <br /> 勇于承担责任
+              <br /> 主动跟进并解决问题
+              <br /> 主动总结反思(总结经验并分享)
+              <br />
             </p>
           </dd>
           <dd>
@@ -37,8 +38,10 @@ class MainSection extends Component {
             </svg>
             <h2>专业</h2>
             <p>
-              项目专长：<br />业务领域或某产品线深入学习，独当一面<br />
-              技术专长：<br />在某技术领域广泛深入的研究，达到专家水平
+              业务专长：
+              <br />业务领域或某产品线深入学习，独当一面
+              <br /> 技术专长：
+              <br />在某技术领域广泛深入的研究，达到专家水平
             </p>
           </dd>
           <dd>
@@ -53,8 +56,9 @@ class MainSection extends Component {
             </svg>
             <h2>沟通</h2>
             <p>
-              换位思考<br />
-              促进本组及兄弟团队共同进步
+              换位思考
+              <br /> 保障团队高效协作
+              <br /> 保持谦逊，态度开放，共同进步
             </p>
           </dd>
         </dl>
@@ -275,15 +279,15 @@ class Home extends Component {
       <div className={style.page}>
         <MainSection />
         <RnSection
-          rnPart={el => this.rnPart = el}
+          rnPart={(el) => { this.rnPart = el; }}
           showRnSection={this.state.showRnSection}
         />
         <CompSection
-          compPart={el => this.compPart = el}
+          compPart={(el) => { this.compPart = el; }}
           showCompSection={this.state.showCompSection}
         />
         <NodeSection
-          nodePart={el => this.nodePart = el}
+          nodePart={(el) => { this.nodePart = el; }}
           showNodeSection={this.state.showNodeSection}
         />
         <TeamSection />
