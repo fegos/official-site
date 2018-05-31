@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = (appInfo) => {
   const config = exports = {};
-  const PORT = 8009;
+  const PORT = 80;
   const BE_PORT = 8007;
   config.cluster = {
     listen: {
