@@ -4,4 +4,4 @@
 // 	exact: true,
 // 	component: () => import('./home')
 // }]
-export default []
+export default [];
