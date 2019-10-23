@@ -6,8 +6,8 @@
  * desc: 描述信息
  */
 const DEFAULT_SEO = {
-  title: 'FEGO大前端 - 官方网站',
-  keyword: 'fego，前端，WEB前端，移动客户端，nodejs',
+  title: '技术心得',
+  keyword: '技术心得',
   desc: '',
 };
 
